@@ -26,3 +26,8 @@ Notice: Please setting Mongo container up, which name must be `mongo` Before run
 ```
 docker run -d --link mongo:mongo -e DB_HOST=mongo -e SWAGGER_OPTIONS='{"urls": [{"name":"petstore","url":"http://petstore.swagger.io/v2/swagger.json"}]}' -p 3000:3000  swagger-ui:latest
 ```
+
+# Mongo run
+```
+docker run -d --name mongo -p 27017:27017 mongo
+```

@@ -1,0 +1,4 @@
+FROM node:6-wheezy
+
+ADD ./node_modules /swagger/node_modules/
+ADD ./swagger-ui-express /swagger/swagger-ui-express/

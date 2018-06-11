@@ -14,7 +14,7 @@ var cookieParser = require('cookie-parser');
 var MongoStore = require('connect-mongo')(session);
 
 var app = express();
-var swaggerUi = require('./swagger-ui-express');
+var swaggerUi = require('swagger-ui-express');
 
 app.locals.pretty = true;
 app.set('port', process.env.PORT || 3000);
